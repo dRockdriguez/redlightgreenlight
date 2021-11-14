@@ -1,0 +1,25 @@
+.input-container {
+    display: flex;
+    flex-flow: column wrap;
+    gap: .6rem;
+    label {
+        font-size: 1rem;
+    }
+    input {
+        font-size: 1rem;
+        padding: .5rem;
+        border-radius: .3rem;
+        color: #333;
+        outline: none;
+        border: 3px solid var(--main-blue);
+    }
+    .input-error {
+        border: 3px solid #dc3545;
+    }
+    .errors {
+        list-style: none;
+        li span {
+            color: #dc3545;
+        }
+    }
+}

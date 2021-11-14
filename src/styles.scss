@@ -1,0 +1,29 @@
+@import "fonts";
+:root {
+    --main-blue: #ccddff;
+    * {
+        font-family: Roboto;
+        margin: 0px;
+        padding: 0px;
+        color: white;
+    }
+    html,
+    body {
+        margin: 0;
+        height: 100vh;
+        overflow: hidden;
+    }
+    body {
+        background-color: #333;
+    }
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}

@@ -1,0 +1,13 @@
+<div class="container">
+    <img id="player-logo" src="assets/imgs/player.svg" alt="player-logo">
+    <h1>Create new player</h1>
+
+    <form class="login-form" [formGroup]="loginForm" novalidate (ngSubmit)="login()">
+        <div class="form-group" *ngFor="let field of formFields">
+            <app-input [errors]="getErrors(field.formControlName)" [formControlName]="field.formControlName" [label]="field.label" [controlName]="field.formControlName" [placeholder]="field.placeholder"></app-input>
+        </div>
+
+        <app-main-button type="submit" label="Join"></app-main-button>
+    </form>
+
+</div>

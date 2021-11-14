@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-flow: column wrap;
+    gap: 1.5rem;
+    #player-logo {
+        width: 3rem;
+        height: 3rem;
+        background-color: white;
+    }
+    h1 {
+        font-weight: 400;
+        font-size: 1.5rem;
+    }
+    .login-form {
+        width: 60%;
+        margin-top: 1.5rem;
+    }
+}

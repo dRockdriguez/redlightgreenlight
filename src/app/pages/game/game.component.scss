@@ -1,0 +1,48 @@
+.container {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1rem;
+    padding: 2rem;
+    align-items: center;
+    padding-top: 2rem;
+    height: 100vh;
+    .header {
+        width: 100%;
+        cursor: pointer;
+        .exit {
+            margin-top: .5rem;
+            cursor: pointer;
+        }
+    }
+    .high-score {
+        font-size: 1.5rem;
+        font-weight: 400;
+        width: 100%;
+        text-align: center;
+        margin-top: 2rem;
+    }
+    .buttons {
+        gap: 1rem;
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        app-icon-button {
+            flex: 1
+        }
+    }
+    .score {
+        width: 100%;
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
+    .semaphore {
+        padding-top: 2rem;
+        text-align: center;
+        width: 100%;
+        height: 160px;
+        img {
+            width: 8rem;
+        }
+    }
+}

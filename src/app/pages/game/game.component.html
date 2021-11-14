@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="header">
+        <div class="player">
+            <span>Hi {{user.name}}</span>
+        </div>
+        <div class="exit" (click)="exit()">
+            <span>< Salir </span>
+        </div>
+    </div>
+    <div class="high-score">
+        High Score: {{user.highScore}}
+    </div>
+    <div class="semaphore">
+        <img *ngIf="!semaphoreOpened" src="assets/imgs/red-semaphore.png">
+        <img *ngIf="semaphoreOpened" src="assets/imgs/green-semaphore.png">
+    </div>
+    <div class="score">
+        Score: {{ user.points }}
+    </div>
+    <div class="buttons">
+        <app-icon-button label="Left" icon="assets/imgs/steps.svg" action="left" (clicked)="clickAction($event)"></app-icon-button>
+        <app-icon-button label="Right" icon="assets/imgs/steps.svg" action="right" (clicked)="clickAction($event)"></app-icon-button>
+    </div>
+</div>
