@@ -53,6 +53,7 @@ Para los tests unitarios se ha configurado jest y testing library.
 Para lanzar los tests unitarios
 <pre><code>ng test</code></pre>
 Lo que además generará un directorio /coverage en la raiz del proyecto con el informe de cobertura de test en formato HTML.
-
+Para abrir este informe:
+<pre><code>npm run open:coverage</code></pre>
 
 [node.js]: https://nodejs.org/
